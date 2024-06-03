@@ -130,6 +130,121 @@ console.log(text + " jordan");
 console.log(".........................................")
 // task 4
 alert("welcome ");
+// task 5
+var name1 = "mohhammed";
+console.log(name1)
+let name2 = "ali";
+console.log(name2)
+var name3 = "salah";
+console.log(name3)
+let name4 = "saleah";
+console.log(name4)
+var name5 = "abd";
+console.log(name5)
+let name6 = "abood";
+console.log(name6)
+var name7 = "hesam";
+console.log(name7)
+let name8 = "abdallah";
+console.log(name8)
+var name9 = "sami";
+console.log(name9)
+var name10 = "mothana";
+console.log(name10)
+console.log(".........................................")
+var numbere1 = 10;
+console.log(numbere1)
+let numbere2 = 20;
+console.log(numbere2)
+var numbere3 = 30;
+console.log(numbere3)
+let numbere4 = 40;
+console.log(numbere4)
+var numbere5 = 50;
+console.log(numbere5)
+let numbere6 = 60;
+console.log(numbere6)
+var numbere7 = 70;
+console.log(numbere7)
+let numbere8 = 80;
+console.log(numbere8)
+var numbere9 = 90;
+console.log(numbere9)
+var numbere10 = 100;
+console.log(numbere10)
+console.log(".........................................")
+var bool1 = true;
+console.log(bool1)
+let bool2 = false;
+console.log(bool2)
+var bool3 = true;
+console.log(bool3)
+let bool4 = false;
+console.log(bool4)
+var bool5 = true;
+console.log(bool5)
+let bool6 = false;
+console.log(bool6)
+var bool7 = true;
+console.log(bool7)
+let bool8 = false;
+console.log(bool8)
+var bool9 = true;
+console.log(bool9)
+var bool10 = false;
+console.log(bool10)
+console.log(".........................................")
+const array1 = [10];
+console.log(array1);
+const array2 = [20];
+console.log(array2);
+const array3 = [30];
+console.log(array3);
+const array4 = [40];
+console.log(array4);
+const array5 = [50];
+console.log(array5);
+const array6 = [60];
+console.log(array6);
+const array7 = [70];
+console.log(array7);
+const array8 = [80];
+console.log(array8);
+const array9 = [90];
+console.log(array9);
+const array10 = [100];
+console.log(array10);
+console.log(".........................................")
+
+const person = { firstName: "John", lastName: "Doe", age: "20", eyecolor: "black", locatione: "jordan", gender: "male", hiercolor: "black", helth: "good", id: "200045425", major: "engeniring" };
+console.log(person.firstName +"," + person.lastName + "," + person.age + "," + person.eyecolor + "," + person.locatione + "," + person.gender + "," + person.hiercolor + "," + person.helth + "," + person.id + "," + person.major)
+// task 6
+function varScoping() {
+    var x = 1;
+
+    if (true) {
+        var x = 2;
+        console.log(x); // will print 2
+    }
+
+    console.log(x); // will print 2
+}
+
+function letScoping() {
+    let number = 1;
+
+    if (true) {
+        let x = 2;
+        console.log(x); // will print 2
+    }
+
+    console.log(x); // will print 1
+}
+// console.log(number);
+letScoping()
+
+
+
 // task7
 var a = 10;
 var b = 5
@@ -154,19 +269,7 @@ console.log(".........................................")
 console.log("Add and assign:" + (a += 5));
 console.log("Subtract and assign:" + (a -= 5));
 console.log("Multiplay and assign:" + (a *= 2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// task 8
+document.write("<h1>hello</h1>");
+window.alert("to the page")
+console.log("task 8")
