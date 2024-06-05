@@ -11,7 +11,7 @@ var square = function (numbers) {
 }
 console.log(square(5));
 // task 3
-let multiply = (num1, num2) => num1 * num2;
+var multiply = (num1, num2) => num1 * num2;
 console.log(multiply(5, 2));
 // task 4
 const car = {
@@ -45,8 +45,7 @@ console.log(toUpperCase('hello'));
 console.log(toUpperCase('world'));
 // task 8
 function split(str,delimiter){
-    var array=str.split(delimiter);
-    return array;
+    return str.split(delimiter);
 }
 console.log(split('Hello World', ' '));
 console.log(split('JavaScript is fun', ' '))
