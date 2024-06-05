@@ -76,12 +76,14 @@ console.log(capital_letter("hello world"))
 // task 8
 function rString(str) {
     let arr = str.split(" ");
-    var j=[]
-    for (let i = arr.length; i >= 0; i--) {
+    var j = []
+    for (let i = arr.length - 1; i >= 0; i--) {
         j.push(arr[i]);
     }
     return j;
-    
+
 }
-rString("hello world");
+console.log(rString('hello world'))
+console.log(rString('JavaScript is fun'));
+
 
