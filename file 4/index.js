@@ -15,16 +15,16 @@ let reverseString = function (str) {
 console.log(reverseString("hello"));
 // task 3
 filterEvenNumbers = (numbers) => {
-    let temp=[]
+    let temp = []
     for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 == 0){
+        if (numbers[i] % 2 == 0) {
             temp.push(numbers[i])
         }
     }
     return temp;
 
 }
-console.log(filterEvenNumbers([2,4,65,7,6]));
+console.log(filterEvenNumbers([2, 4, 65, 7, 6]));
 // task 4
 let library = {
     books: [],
@@ -75,8 +75,13 @@ function capital_letter(str) {
 console.log(capital_letter("hello world"))
 // task 8
 function rString(str) {
-    const strRev = [...str].reduce((x, y) => y.concat(x));
-    console.log(strRev);
+    let arr = str.split(" ");
+    var j=[]
+    for (let i = arr.length; i >= 0; i--) {
+        j.push(arr[i]);
+    }
+    return j;
+    
 }
-rString("hello world")
+rString("hello world");
 
