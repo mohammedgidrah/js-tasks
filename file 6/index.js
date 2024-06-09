@@ -70,6 +70,70 @@ color.addEventListener("input", function () {
 
 })
 // task 15
+document.addEventListener("DOMContentLoaded", function () {
+    const images = [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ718nztPNJfCbDJjZG8fOkejBnBAeQw5eAUA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbKnG--JqNfXHh0OXOQgveASbG2ZDeOrpcQ&s",
+    ];
+    let currentIndex = 0;
+    const carouselImage = document.querySelector(".main img");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+
+    function showImage(index) {
+        if (index < 0) {
+            index = images.length - 1;
+        } else if (index >= images.length) {
+            index = 0;
+        }
+        carouselImage.src = images[index];
+        currentIndex = index;
+    }
+
+    prevBtn.addEventListener("click", function () {
+        showImage(currentIndex - 1);
+    });
+
+    nextBtn.addEventListener("click", function () {
+        showImage(currentIndex + 1);
+    });
+
+    showImage(currentIndex);
+});
+//   task 16
+function print() {
+    var arr = ["wellcome", "to", "my", "div"];
+    var display = arr.toString();
+    document.getElementById("string").innerHTML = display;
+}
+// task 17
+document.onclick = hideMenu;
+document.oncontextmenu = rightClick;
+
+function hideMenu() {
+    document.getElementById(
+        "contextMenu").style.display = "none"
+}
+
+function rightClick(e) {
+    e.preventDefault();
+
+    if (document.getElementById(
+        "contextMenu").style.display == "block")
+        hideMenu();
+    else {
+        var menu = document
+            .getElementById("contextMenu")
+
+        menu.style.display = 'block';
+        menu.style.left = e.pageX + "px";
+        menu.style.top = e.pageY + "px";
+    }
+}
+// task 18
+
+
 
 
 
