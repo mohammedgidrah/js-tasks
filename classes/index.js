@@ -38,7 +38,7 @@ class Account {
         this.#balance += amount;
     }
     withdraw(amount) {
-        if (amount > this.balance) {
+        if (amount > this.#balance) {
             console.log("Funds are insufficient");
         } else {
             this.#balance -= amount;
@@ -55,7 +55,8 @@ class Account {
     }
 
 }
-let myaccount = new Account(3000);
+let myaccount = new Account();
+myaccount.setbalnce(2000)
 console.log(myaccount.getbalance());
 myaccount.withdraw(2000);
 console.log(myaccount.getbalance());
