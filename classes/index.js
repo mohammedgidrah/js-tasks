@@ -56,7 +56,7 @@ class Account {
 
 }
 let myaccount = new Account();
-myaccount.setbalnce(2000)
+myaccount.setbalnce(4000)
 console.log(myaccount.getbalance());
 myaccount.withdraw(2000);
 console.log(myaccount.getbalance());

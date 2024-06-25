@@ -131,7 +131,7 @@ function rightClick(e) {
         menu.style.top = e.pageY + "px";
     }
 }
-// task 18
+
 
 
 
